@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Nos Boutiques | Biscuiterie Carthéo</title>
+    
+    <!-- Polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+     <!-- Font Awesome pour les logos réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Styles spécifiques pour la page Contact */
+        main {
+            padding: 40px 10%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .boutique-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            background-color: var(--couleur-creme);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border: 2px solid var(--couleur-sable);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            align-items: center;
+        }
+
+        .boutique-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .boutique-info h3 {
+            color: var(--couleur-chocolat);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            border-bottom: 2px solid var(--couleur-accent);
+            padding-bottom: 8px;
+        }
+
+        .boutique-info p {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            color: #5d4037;
+        }
+
+        .boutique-map {
+            flex: 1;
+            min-width: 280px;
+            height: 220px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid var(--couleur-sable);
+        }
+
+        .boutique-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-gauche">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Nos Produits ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="sucres.html">Biscuits sucrés</a></li>
+                        <li><a href="sales.html">Biscuits salés</a></li>
+                        <li><a href="chocolats.html">Chocolats</a></li>
+                        <li><a href="meringues.html">Meringues</a></li>
+                        <li><a href="panettones.html">Panettones</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                        <li><a href="petitsfours.html">Petits fours</a></li>
+                        <li><a href="glaces.html">Glaces</a></li>
+                         <li><a href="gateaux.html">Gâteaux</a></li>
+                        <li><a href="noel.html">Noël</a></li>
+                        <li><a href="paques.html">Pâques</a></li>
+                       <li><a href="roi.html">Epiphanie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="logo-centre">Carthéo</div>
+        <div style="width: 150px;"></div>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; margin-bottom: 20px; color: var(--couleur-chocolat);">Contactez-nous & Nos Boutiques</h1>
+        <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem;">Une question, une commande spéciale ou envie de venir chercher vos douceurs ? Retrouvez nos trois points de vente ci-dessous :</p>
+
+        <!-- Boutique 1 : Toulon -->
+        <div class="boutique-wrapper">
+            <div class="boutique-info">
+                <h3>📍 Toulon - Bazeilles</h3>
+                <p><strong>Localisation :</strong> Bd Bazeilles, 83000 Toulon</p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33956515554" style="color: #5d4037; font-weight: bold; text-decoration: underline;">09 56 51 55 54</a></p>
+                <p><strong>Horaires :</strong><br>
+                Du mardi au samedi : 9h00 - 13h00 / 15h00 - 19h00<br>
+                Dimanche : 9h00 - 13h00<br>
+                <em>Fermé le lundi</em></p>
+            </div>
+            <div class="boutique-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.2248119819518!2d5.938636386604587!3d43.11232568619691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c91bce7024102b%3A0xf06cd846ebf17a17!2sCARTHEO%20biscuiterie%20chocolaterie!5e0!3m2!1sfr!2sfr!4v1786524978967!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+
+        <!-- Boutique 2 : Carqueiranne -->
+        <div class="boutique-wrapper">
+            <div class="boutique-info">         
+                <h3>📍 Carqueiranne</h3>
+                <p><strong>Adresse :</strong> Z.A. des Castors, Route de la Moutonne, 83320 Carqueiranne<br><em>(Après Ciffréo Bona, tout au bout de l'impasse)</em></p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33955272397" style="color: #5d4037; font-weight: bold; text-decoration: underline;">09 55 27 23 97</a></p>
+                <p><strong>Horaires :</strong><br>
+                Du mardi au samedi : 8h30 - 13h00 / 15h00 - 19h00<br>
+                <br>
+                <em>Fermé dimanche - lundi</em></p>
+            </div>
+            <div class="boutique-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1456.3574067989023!2d6.045968995153695!3d43.11050787253287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9192253ee256b%3A0x463bb7c361482b33!2sBiscuiterie%20Chocolaterie%20Carth%C3%A9o!5e0!3m2!1sfr!2sfr!4v1786525067272!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+
+        <!-- Boutique 3 : Hyères -->
+        <div class="boutique-wrapper">
+            <div class="boutique-info">
+                <h3>📍 Hyères</h3>
+                <p><strong>Adresse :</strong> 36 Avenue Edith Cavell, 83400 Hyères</p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33952678359" style="color: #5d4037; font-weight: bold; text-decoration: underline;">09 52 67 83 59</a></p>
+                <p><strong>Horaires :</strong><br>
+                Du mardi au samedi : 8h30 - 13h00 / 15h00 - 19h00<br>
+                Dimanche : 8h30 - 12h30<br>
+                <em>Fermé le lundi</em></p>
+            </div>
+            <div class="boutique-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1111.128853639852!2d6.12535429972509!3d43.110301394872415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c923963e89eb1f%3A0xe8f3c488b90f8f64!2sBiscuiterie%20Carth%C3%A9o!5e0!3m2!1sfr!2sfr!4v1786525122822!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Section Livre d'or / Avis -->
+        <div class="avis-section">
+            <h2>Partagez votre expérience avec nous</h2>
+            <p class="soustitre-avis">Une critique, une remarque, un compliment ? Tout est bon à prendre ! Laissez-nous votre avis.</p>
+            
+            <!-- 
+              Note : Pour que le formulaire envoie un e-mail ou enregistre le message, 
+              vous pouvez utiliser un setuit comme Formsprervice grae, Netlify Forms, 
+              ou l'attribut action="mailto:votremail@exemple.com" (version basique).
+            -->
+            <form class="form-avis" action="https://formspree.io/f/xzepywal" method="POST">
+                <div class="form-group">
+                    <label for="nom">Votre nom ou prénom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex : Marie Dupont" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Votre e-mail (facultatif) :</label>
+                    <input type="email" id="email" name="email" placeholder="Ex : marie@exemple.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Votre message :</label>
+                    <textarea id="message" name="message" placeholder=" " required></textarea>
+                </div>
+
+                <button type="submit" class="btn-envoyer">Envoyer mon message</button>
+            </form>
+        </div>
+
+ <footer>
+        <p>Retrouvez-nous également sur les réseaux sociaux !</p>
+        <div class="social-links">
+            <!-- Lien Facebook avec le vrai logo -->
+            <a href="https://www.facebook.com/biscuiteriecartheo" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            
+            <!-- Lien Instagram avec le vrai logo -->
+            <a href="https://www.instagram.com/biscuiteriecartheo/?utm_source=ig_web_button_share_sheet" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 15px;">&copy; 2026 Biscuiterie Carthéo - Artisanat de qualité</p>
+    </footer>
+</body>
+</html>

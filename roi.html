@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galettes & Couronnes | Biscuiterie Carthéo</title>
+    
+    <!-- Polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les logos réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        main { padding: 40px 10%; max-width: 1000px; margin: auto; }
+        .titre-page { text-align: center; color: var(--couleur-chocolat); font-family: 'Lobster', cursive; font-size: 2.8rem; margin-bottom: 40px; }
+        
+        .grid-produits { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; justify-items: center; }
+        .card-produit { background: var(--couleur-creme); padding: 25px; border-radius: 15px; border: 2px solid var(--couleur-sable); text-align: center; max-width: 400px; }
+        .card-produit img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
+        .card-produit h3 { color: var(--couleur-chocolat); font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-gauche">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Nos Produits ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="sucres.html">Biscuits sucrés</a></li>
+                        <li><a href="sales.html">Biscuits salés</a></li>
+                        <li><a href="chocolats.html">Chocolats</a></li>
+                        <li><a href="meringues.html">Meringues</a></li>
+                        <li><a href="panettones.html">Panettones</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                        <li><a href="petitsfours.html">Petits fours</a></li>
+                        <li><a href="glaces.html">Glaces</a></li>
+                         <li><a href="gateaux.html">Gâteaux</a></li>
+                        <li><a href="noel.html">Noël</a></li>
+                        <li><a href="paques.html">Pâques</a></li>
+                        <li><a href="roi.html"> Epiphanie   </a></li>   
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="logo-centre">Carthéo</div>
+        <div style="width: 150px;"></div>
+    </header>
+
+    <main>
+        <h1 class="titre-page">La Saison des Rois chez Carthéo</h1>
+
+        <div class="grid-produits">
+            <!-- Galette Frangipane -->
+            <div class="card-produit">
+                <img src="assets/img/frangipanne.jpg" alt="Galette Frangipane">
+                <h3>La Galette Frangipane</h3>
+                <p>Un feuilletage pur beurre croustillant à souhait et une frangipane maison généreuse et fondante.</p>
+            </div>
+
+            <!-- Couronne Briochée -->
+            <div class="card-produit">
+                <img src="assets/img/couronne.jpg" alt="Couronne Briochée">
+                <h3>La Couronne Briochée</h3>
+                <p>La tradition provençale par excellence : une brioche légère, parfumée et décorée de fruits confits.</p>
+            </div>
+        </div>
+        
+        <p style="text-align: center; margin-top: 60px; font-size: 1.3rem; color: #5d4037;">
+            <strong>A déguster des le 1er Janvier 2027
+            
+            </strong>
+        </p>
+    </main>
+
+    <footer>
+        <p>Retrouvez-nous également sur les réseaux sociaux !</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/biscuiteriecartheo" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/biscuiteriecartheo/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 15px;">&copy; 2026 Biscuiterie Carthéo - Artisanat de qualité</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Cakes | Biscuiterie Carthéo</title>
+    
+    <!-- Polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour les logos réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Réduction de la largeur globale de la page pour les cakes */
+        .produits-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 350px;
+            margin: auto;
+        }
+
+        .produit-card {
+            display: flex;
+            align-items: center;
+            background-color: var(--couleur-creme);
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 2px solid var(--couleur-sable);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            gap: 25px;
+        }
+
+        .produit-card img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid var(--couleur-sable);
+            flex-shrink: 0;
+        }
+
+        .produit-card p {
+            font-size: 1.3rem;
+            color: var(--couleur-chocolat);
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-gauche">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Nos Produits ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="sucres.html">Biscuits sucrés</a></li>
+                        <li><a href="sales.html">Biscuits salés</a></li>
+                        <li><a href="chocolats.html">Chocolats</a></li>
+                        <li><a href="meringues.html">Meringues</a></li>
+                        <li><a href="panettones.html">Panettones</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                        <li><a href="petitsfours.html">Petits fours</a></li>
+                        <li><a href="glaces.html">Glaces</a></li>
+                         <li><a href="gateaux.html">Gâteaux</a></li>
+                        <li><a href="noel.html">Noël</a></li>
+                        <li><a href="paques.html">Pâques</a></li>
+                        <li><a href="roi.html">Epiphanie</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="logo-centre">Carthéo</div>
+        <div style="width: 150px;"></div>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; margin-bottom: 30px; color: var(--couleur-chocolat); font-family: 'Lobster', cursive; font-size: 2.8rem;">Nos Cakes Maison</h1>
+
+        <section class="produits-section">
+            <div class="produits-grid">
+                <div class="produit-card">
+                    <img src="assets/img/cake_fruits.jpg" alt="Cake aux Fruits Confits">
+                    <p>Fruits Confits</p>
+                </div>
+                <div class="produit-card">
+                    <img src="assets/img/cake_chocolat.png" alt="Cake au Chocolat">
+                    <p>Chocolat</p>
+                </div>
+                <div class="produit-card">
+                    <img src="assets/img/cake_clementine.png" alt="Cake Clémentine Chocolat">
+                    <p>Clémentine Chocolat</p>
+                </div>
+                <div class="produit-card">
+                    <img src="assets/img/cake_citron.png" alt="Cake au Citron">
+                    <p>Citron</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Retrouvez-nous également sur les réseaux sociaux !</p>
+        <div class="social-links">
+            <!-- Lien Facebook avec le vrai logo -->
+            <a href="https://www.facebook.com/biscuiteriecartheo" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            
+            <!-- Lien Instagram avec le vrai logo -->
+            <a href="https://www.instagram.com/biscuiteriecartheo/?utm_source=ig_web_button_share_sheet" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 15px;">&copy; 2026 Biscuiterie Carthéo - Artisanat de qualité</p>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.produit-card');
+    
+    cards.forEach(card => {
+        const img = card.querySelector('img');
+        
+        if (img.src.includes('placeholder.jpg') || img.naturalWidth === 0) {
+            card.classList.add('en-attente');
+        }
+        
+        img.onerror = function() {
+            card.classList.add('en-attente');
+        };
+    });
+});
+</script>
+</body>
+</html>

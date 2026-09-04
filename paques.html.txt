@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection de Pâques | Biscuiterie Carthéo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-gauche">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Nos Produits ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="sucres.html">Biscuits sucrés</a></li>
+                        <li><a href="sales.html">Biscuits salés</a></li>
+                        <li><a href="chocolats.html">Chocolats</a></li>
+                        <li><a href="meringues.html">Meringues</a></li>
+                        <li><a href="panettones.html">Panettones</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                        <li><a href="petitsfours.html">Petits fours</a></li>
+                        <li><a href="glaces.html">Glaces</a></li>
+                        <li><a href="noel.html">Noël</a></li>
+                        <li><a href="pâques.html">Pâques</a></li>
+                        <li><a href="autresgourmandises.html">Autres gourmandises</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-centre">Carthéo</div>
+        <div style="width: 150px;"></div>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; margin-bottom: 40px;">Collection de Pâques</h1>
+
+        <section class="produits-section">
+            <h2 class="titre-categorie">Sujets de Pâques</h2>
+            <div class="produits-grid">
+                <div class="produit-card"><img src="assets/img/paques_sujet_l.jpg" alt="Sujet Pâques Lait"><p>Sujet Lait</p></div>
+                <div class="produit-card"><img src="assets/img/paques_sujet_n.jpg" alt="Sujet Pâques Noir"><p>Sujet Noir</p></div>
+                <div class="produit-card"><img src="assets/img/paques_sujet_b.jpg" alt="Sujet Pâques Blanc"><p>Sujet Blanc</p></div>
+            </div>
+        </section>
+
+        <section class="produits-section">
+            <h2 class="titre-categorie">Friture de Pâques</h2>
+            <div class="produits-grid">
+                <div class="produit-card"><img src="assets/img/paques_friture_l.jpg" alt="Friture Pâques Lait"><p>Friture Lait</p></div>
+                <div class="produit-card"><img src="assets/img/paques_friture_n.jpg" alt="Friture Pâques Noir"><p>Friture Noir</p></div>
+                <div class="produit-card"><img src="assets/img/paques_friture_b.jpg" alt="Friture Pâques Blanc"><p>Friture Blanc</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Biscuiterie Carthéo - Artisanat de qualité</p>
+    </footer>
+   </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.produit-card');
+    
+    cards.forEach(card => {
+        const img = card.querySelector('img');
+        
+        // Si l'image est un placeholder ou si elle échoue à charger
+        if (img.src.includes('placeholder.jpg') || img.naturalWidth === 0) {
+            card.classList.add('en-attente');
+        }
+        
+        // Sécurité supplémentaire : si l'image casse au chargement
+        img.onerror = function() {
+            card.classList.add('en-attente');
+        };
+    });
+});
+</script>
+</body>
+</html>
