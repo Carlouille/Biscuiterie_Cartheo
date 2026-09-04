@@ -124,22 +124,6 @@
         <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 15px;">&copy; 2026 Biscuiterie Carthéo - Artisanat de qualité</p>
     </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll('.produit-card');
-    
-    cards.forEach(card => {
-        const img = card.querySelector('img');
-        
-        if (img.src.includes('placeholder.jpg') || img.naturalWidth === 0) {
-            card.classList.add('en-attente');
-        }
-        
-        img.onerror = function() {
-            card.classList.add('en-attente');
-        };
-    });
-});
-</script>
+
 </body>
 </html>
